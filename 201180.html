@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>201180</title>
+        <style>
+            body {
+                background-color: rgba(122, 226, 209, 0.822);
+            }
+            h1 {
+                text-align: center;
+            }
+
+            #name {
+                color: brown;
+            }
+            /* image properties */
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 10px;
+                width: 300px;
+                height: 400px;
+            }
+            .info {
+                padding: 10px;
+                border-top: 2px solid red;
+                border-bottom: 2px solid red;
+                background-color: rgb(207, 178, 235);
+            }
+
+            .info table {
+                border: 2px solid rgb(11, 109, 255);
+                width: 100%;
+                text-align: left;
+            }
+            .info th,
+            .info td {
+                border: 2px solid rgb(11, 109, 255);
+            }
+            .info tr:nth-child(even) {
+                background-color: rgb(228, 192, 192);
+            }
+            .info tr:nth-child(odd) {
+                background-color: rgb(7, 173, 104);
+            }
+
+            .edu table {
+                border: 2px solid greenyellow;
+                width: 100%;
+                text-align: right;
+                border-collapse: collapse;
+            }
+            .edu th,
+            .edu td {
+                border: 2px solid greenyellow;
+            }
+            .edu th:nth-child(even),
+            .edu td:nth-child(even) {
+                background-color: rgb(201, 110, 5);
+            }
+            .edu th:nth-child(odd),
+            .edu td:nth-child(odd) {
+                background-color: rgb(5, 125, 141);
+            }
+            table img {
+                height: 150px;
+                width: auto;
+                padding: 0px;
+            }
+
+            .edu {
+                border-bottom: 2px solid red;
+                padding: 10px;
+                background-color: rgb(180, 124, 124);
+            }
+            .eca {
+                border-bottom: 2px solid red;
+                padding: 10px;
+                background-color: rgb(40, 187, 150);
+            }
+
+            ul li {
+                font-style: italic;
+                font-size: larger;
+                padding: 5px;
+            }
+            a:link {
+                padding: 15px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+            .nav {
+                float: right;
+                display: block;
+                text-decoration: none;
+                border: 2px solid red;
+
+                padding: 10px;
+            }
+            .nav:link {
+                color: #3cff00;
+                background-color: rgb(29, 10, 134);
+            }
+            .nav:hover {
+                color: azure;
+                background-color: #2fad09;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- personal deatails -->
+        <h1 id="name">VANSH JAIN</h1>
+        <img
+            src="C:\Users\vansh\OneDrive\Desktop\JUIT\vansh.jpeg"
+            alt="Photograph"
+        />
+
+        <!-- personal details section -->
+        <div class="info">
+            <table>
+                <tr>
+                    <th>Date of Birth:</th>
+                    <td>18<sup>th</sup> SEPTEMBER 2002</td>
+                </tr>
+                <tr>
+                    <th>Birth Place:</th>
+                    <td>DELHI-6</td>
+                </tr>
+                <tr>
+                    <th>Father's Name:</th>
+                    <td>SANJAY JAIN</td>
+                </tr>
+                <tr>
+                    <th>Mother's Name:</th>
+                    <td>LATA JAIN</td>
+                </tr>
+                <tr>
+                    <th>Permanent Address:</th>
+                    <td>1124 Chah Rahat Dariba kalan, delhi 6</td>
+                </tr>
+                <tr>
+                    <th>Contact Number:</th>
+                    <td>9310481889</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Educational details  section -->
+        <div class="edu">
+            <h1>Educational Details</h1>
+
+            <a class="nav" href="#name">Go to top!</a>
+            <!-- educational details of secondary grade -->
+            <table>
+                <caption>
+                    Educational Details
+                </caption>
+                <tr>
+                    <td></td>
+                    <th>School Name</th>
+                    <th>Marks Scored</th>
+                    <th>Favorite Subject</th>
+                    <th>Marksheet Snapshot</th>
+                </tr>
+                <tr>
+                    <th>10<sup>th</sup></th>
+                    <td>Happy school, Darya Ganj, New Delhi</td>
+                    <td>359</td>
+                    <td>Maths</td>
+                    <td>
+                        <img
+                            src="C:\Users\vansh\OneDrive\Desktop\vansh personal\10 marksheet vjjain.PNG"
+                            alt=""
+                        />
+                    </td>
+                </tr>
+                <tr>
+                    <th>12<sup>th</sup></th>
+                    <td>Happy school, Darya Ganj, New Delhi</td>
+                    <td>448</td>
+                    <td>Chemistry,Maths</td>
+                    <td>
+                        <img
+                            src="C:\Users\vansh\OneDrive\Desktop\vansh personal\12 marksheet vjjain.PNG"
+                            alt=""
+                        />
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Extra curricular activity section-->
+        <div class="eca">
+            <a class="nav" href="#name">Go to top!</a>
+            <h1 class="ec">Extra Curricular Activities</h1>
+
+            <!--Hobbies heading-->
+            <ul>
+                <li>Video Editing</li>
+                <li>Football</li>
+                <li>Cricket</li>
+            </ul>
+        </div>
+    </body>
+</html>

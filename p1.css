@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(162, 253, 249);
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.name {
+    color: brown;
+}
+img {
+    width: 300px;
+    height: 400px;
+}
+
+.dob {
+    border-top: 2px solid black;
+}
+
+.ed {
+    border-top: 2px solid black;
+    color: rebeccapurple;
+}
+
+.grade {
+    font-size: 25px;
+    color: hotpink;
+}
+
+.ec {
+    border-top: 2px solid black;
+    color: blueviolet;
+}
+
+.eca {
+    font-style: italic;
+}
+
+.social {
+    display: block;
+    color: brown;
+}
+.sc {
+    border-top: 2px solid black;
+}
+a:link {
+    color: rgb(0, 25, 138);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: larger;
+    font-weight: 1000;
+}
