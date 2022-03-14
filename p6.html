@@ -1,80 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="p6.css" />
-        <title>201172</title>
-    </head>
-    <body>
-        <p>*All fields are mandatory!</p>
-        <form action="#">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="name" required /><br />
-            <label for="contact">Contact:</label>
-            <input type="text" name="contact" id="contact" required /><br />
 
-            <label for="country">Country Zone:</label>
-            <select name="country" id="country">
-                <option value="Asia">Asia pacific</option>
-                <option value="Europ">Europ</option>
-                <option value="North America">North America</option>
-                <option value="South America">South America</option>
-                <option value="Africa">Africa</option>
-            </select>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>201172</title>
+    <style>
+        h1 {
+            text-decoration: underline;
+            text-align: center;
+        }
 
-            <h4>Please choose appropriate participation type!</h4>
-            <input
-                type="radio"
-                id="student"
-                name="type"
-                value="student"
-                required
-            />
-            <label for="student">Student</label><br />
-            <input type="radio" id="faculty" name="type" value="faculty" />
-            <label for="faculty">Faculty Member</label><br />
-            <input
-                type="radio"
-                id="professional"
-                name="type"
-                value="professional"
-            />
-            <label for="professional">Professional</label><br />
-            <input
-                type="radio"
-                id="company/firm"
-                name="type"
-                value="company/firm"
-            />
-            <label for="company/firm">Company/Firm</label>
+        .bold {
+            font-weight: bold;
+        }
 
-            <h4>Please choose currency type</h4>
+        #roll {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
-            <input type="radio" name="currency" id="rupees" required />
-            <label for="rupees">Rupees (₹ 1500)</label><br />
-            <input type="radio" name="currency" id="doller" />
-            <label for="doller">Doller ($ 20)</label>
+        #year {
+            overflow: hidden;
+            width: 40px;
+        }
 
-            <h4>Choose mode of payment</h4>
-            <input type="radio" name="mode" id="cc" required />
-            <label for="cc">Credit Card</label><br />
-            <input type="radio" name="mode" id="dc" />
-            <label for="dc">Debit Card</label><br />
-            <input type="radio" name="mode" id="dd" />
-            <label for="dd">Demand Draft</label><br />
+        #branch {
+            width: auto;
+        }
 
-            <label for="hotels">Choose Hotel: </label>
-            <select name="hotels" id="hotels">
-                <option value="h1">Hotel 1</option>
-                <option value="h2">Hotel 2</option>
-                <option value="h3">Hotel 3</option>
-                <option value="h4">Hotel 4</option></select
-            ><br /><br />
-            <input type="submit" />
-        </form>
+        .tarea {
+            display: block;
+            margin-top: 50px;
+            font-weight: bold;
+        }
 
-        <div></div>
-    </body>
+        #area {
+            overflow-y: scroll;
+            height: 200px;
+            width: 300px;
+            resize: none;
+            display: block;
+            margin-bottom: 40px;
+        }
+
+        .contact {
+            position: relative;
+            border: 2px solid;
+            margin-top: 30px;
+            height: 100px;
+        }
+
+        .z {
+            z-index: 1;
+            position: absolute;
+            top: -30px;
+            left: 15px;
+            background-color: #fff;
+
+        }
+
+        #mobile {
+            margin: 10px;
+        }
+
+        #email {
+
+            margin-right: 10px;
+        }
+
+        #at {
+            width: 75px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Information Form</h1>
+    <form action="#">
+        <div class="basic">
+            <label for="name" class="bold">Enter your NAME:</label>
+            <input type="text" name="name" id="name">
+            <br>
+            <label for="roll" class="bold">Enter your ENROLMENT NUMBER:</label>
+            <input type="text" name="roll" id="roll">
+            <br>
+            <label for="password" class="bold">Enter your PASSWORD (must note be more than 10 characters):</label>
+            <input type="password" name="password" id="password" maxlength="10">
+
+        </div>
+        <h3>Choose your COURSE-</h3>
+        <input type="checkbox" name="btech" id="" class="course">
+        <label for="btech">B.tech</label>
+        <br>
+        <input type="checkbox" name="mtech" id="" class="course">
+        <label for="mtech">M.tech</label>
+        <br>
+
+        <h3>Select your year:</h3>
+        <select name="year" id="year" size="4">
+            <option value="1">1st</option>
+            <option value="2">2nd</option>
+            <option value="3">3rd</option>
+            <option value="4">4th</option>
+        </select>
+
+        <h3>Select your branch:</h3>
+        <select name="year" id="branch">
+            <option value="1">ECE</option>
+            <option value="2">CSE</option>
+            <option value="3">IT</option>
+            <option value="4">CIVIL</option>
+            <option value="5">BT</option>
+            <option value="6">BI</option>
+        </select>
+        <br>
+        <h3>Choose your Hostel:</h3>
+        <label for="ab">Azad Bhawan</label>
+        <input type="radio" name="ab" id="">
+        <br>
+        <label for="gb">Geeta Bhawan</label>
+        <input type="radio" name="gb" id="">
+        <br>
+        <label for="pb">Parmar Bhawan</label>
+        <input type="radio" name="pb" id="">
+        <br>
+        <label for="sb">Shastri Bhawan</label>
+        <input type="radio" name="sb" id="">
+        <br>
+        <label for="mb">Malviya Bhawan</label>
+        <input type="radio" name="mb" id="">
+        <br>
+        <label for="ds">Day Scholar</label>
+        <input type="radio" name="ds" id="">
+        <br>
+
+
+        <label for="area" class="tarea">Tell us for field of interest:</label><br>
+        <textarea name="area" id="area" cols="30" rows="100"></textarea>
+
+        <label for="file"><b>Upload your photograph.</label><br>
+        <input type="file" name="file" id="file">
+
+
+
+        <div class="contact">
+            <h3 class="z">Contact Information</h3><br>
+            <label for="email">Email ID:</label>
+            <input type="text" name="email">
+            <label for="at">@</label>
+            <input type="text" name="at" id="at">
+            <br>
+            <label for="mobile">Mobile: +91</label>
+            <input type="text" name="mobile" id="mobile">
+        </div>
+
+
+    </form>
+
+
+</body>
+
 </html>
