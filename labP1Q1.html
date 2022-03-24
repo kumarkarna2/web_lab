@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>201172</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        hr {
+            margin: 15px 15px;
+        }
+
+        #fname {
+            margin-right: 20px;
+        }
+
+        .f {
+            margin-left: 55px;
+            display: inline
+        }
+
+        .l {
+            margin-left: 110px;
+            display: inline;
+            padding: 5px;
+        }
+
+        #bdate {
+            margin: 10px 10px;
+        }
+
+        #submit {
+            margin-left: 50%;
+
+        }
+
+        /* input {
+            margin-right: 50px
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>Music School Registration</h1>
+    <p>Register to our music school from below</p>
+    <hr />
+    <form action="">
+        <label for="name">Name * </label>
+        <input type="text" name="fname" id="fname" value="" required /><input type="text" name="lname" id="lname"
+            value="" required /> <br>
+        <p class="f">First name</p>
+        <p class="l">Last name</p>
+        <br>
+
+        <label for="Bdate">Birth Date *</label>
+        <input type="date" name="bdate" id="bdate" />
+        <br />
+
+        <label for="coi">Choice of Instrument *</label>
+        <select name="coi" id="coi">
+            <option value="a">A</option>
+            <option value="b">B</option>
+            <option value="c">C</option>
+        </select>
+
+        <p>Pick Days for Classes *</p>
+        <label for="mon"></label>
+        <input type="checkbox" name="mon" id="mon" />Monday <br />
+        <label for="tue"></label>
+        <input type="checkbox" name="tue" id="tue" />Tuesday <br />
+        <label for="wed"></label>
+        <input type="checkbox" name="wed" id="wed" />Wednesday <br />
+        <label for="thu"></label>
+        <input type="checkbox" name="thu" id="thu" />Thursday <br />
+        <label for="fri"></label>
+        <input type="checkbox" name="fri" id="fri" />Friday <br />
+        <label for="sat"></label>
+        <input type="checkbox" name="sat" id="sat" />Saturday <br />
+        <label for="sun"></label>
+        <input type="checkbox" name="sun" id="sun" />Sunday <br />
+
+        <p>Start Date & Time *</p>
+        <input type="date" name="date" id="date" />
+        <input type="time" name="time" id="time" />
+
+        <h4>Comments</h4>
+        <textarea name="tarea" id="" cols="30" rows="10" placeholder="Type here..."></textarea><br>
+        <input type="submit" name="submit" id="submit" />
+    </form>
+</body>
+
+</html>
