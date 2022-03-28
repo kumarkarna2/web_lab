@@ -1,270 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>201172</title>
-        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
-    <style>
-        body {
-            background-color: rgba(122, 226, 209, 0.822);
-        }
-        h1 {
-            text-align: center;
-        }
 
-        #name {
-            color: brown;
-        }
-        /* image properties */
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 10px;
-            width: 300px;
-            height: 400px;
-        }
-        .info {
-            padding: 10px;
-            border-top: 2px solid red;
-            border-bottom: 2px solid red;
-            background-color: rgb(207, 178, 235);
-        }
+<head>
+    <title>201172</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<style>
+    body {
+        background-color: rgba(122, 226, 209, 0.822);
+    }
+    
+    h1 {
+        text-align: center;
+    }
+    
+    #name {
+        color: brown;
+    }
+    /* image properties */
+    
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        width: 300px;
+        height: 400px;
+    }
+    
+    .info {
+        padding: 10px;
+        border-top: 2px solid red;
+        border-bottom: 2px solid red;
+        background-color: rgb(207, 178, 235);
+    }
+    
+    .info table {
+        border: 2px solid rgb(11, 109, 255);
+        width: 100%;
+        text-align: left;
+    }
+    
+    .info th,
+    .info td {
+        border: 2px solid rgb(11, 109, 255);
+    }
+    
+    .info tr:nth-child(even) {
+        background-color: rgb(228, 192, 192);
+    }
+    
+    .info tr:nth-child(odd) {
+        background-color: rgb(7, 173, 104);
+    }
+    
+    .edu table {
+        border: 2px solid greenyellow;
+        width: 100%;
+        text-align: right;
+        border-collapse: collapse;
+    }
+    
+    .edu th,
+    .edu td {
+        border: 2px solid greenyellow;
+    }
+    
+    .edu th:nth-child(even),
+    .edu td:nth-child(even) {
+        background-color: rgb(201, 110, 5);
+    }
+    
+    .edu th:nth-child(odd),
+    .edu td:nth-child(odd) {
+        background-color: rgb(5, 125, 141);
+    }
+    
+    table img {
+        height: 150px;
+        width: auto;
+        padding: 0px;
+    }
+    
+    .edu {
+        border-bottom: 2px solid red;
+        padding: 10px;
+        background-color: rgb(180, 124, 124);
+    }
+    
+    .eca {
+        border-bottom: 2px solid red;
+        padding: 10px;
+        background-color: rgb(40, 187, 150);
+    }
+    
+    ul li {
+        font-style: italic;
+        font-size: larger;
+        padding: 5px;
+    }
+    
+    a:link {
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+    }
+    
+    .nav1 {
+        float: right;
+        display: block;
+        text-decoration: none;
+        border: 2px solid red;
+        padding: 10px;
+    }
+    
+    .nav1:link {
+        color: #3cff00;
+        background-color: rgb(29, 10, 134);
+    }
+    
+    .nav1:hover {
+        color: azure;
+        background-color: #2fad09;
+    }
+    
+    .nav2 {
+        float: right;
+        display: block;
+        text-decoration: none;
+        border: 2px solid greenyellow;
+        padding: 10px;
+    }
+    
+    .nav2:link {
+        color: blue;
+        background-color: rgb(177, 104, 104);
+    }
+    
+    .nav2:hover {
+        color: rgb(64, 231, 231);
+        background-color: #cfcfcf;
+    }
+    
+    .nav3 {
+        float: right;
+        display: block;
+        text-decoration: none;
+        border: 2px solid blue;
+        padding: 10px;
+    }
+    
+    .nav3:link {
+        color: #d815ff;
+        background-color: rgb(0, 240, 12);
+    }
+    
+    .nav3:hover {
+        color: rgb(63, 42, 255);
+        background-color: #fa8cb0;
+    }
+    
+    .fb {
+        font-weight: bold;
+        border: 2px solid #9e8dfa;
+        color: #a4ff88;
+        background-color: rgb(0, 26, 172);
+    }
+    
+    .fb:hover {
+        color: red;
+        background-color: #fff;
+    }
+    
+    .ln {
+        font-weight: bold;
+        border: 2px solid #d815ff;
+        color: #d815ff;
+        background-color: rgb(72, 224, 204);
+    }
+    
+    .ln:hover {
+        color: #63ff33;
+        background-color: rgb(175, 155, 155);
+    }
+</style>
 
-        .info table {
-            border: 2px solid rgb(11, 109, 255);
-            width: 100%;
-            text-align: left;
-        }
-        .info th,
-        .info td {
-            border: 2px solid rgb(11, 109, 255);
-        }
-        .info tr:nth-child(even) {
-            background-color: rgb(228, 192, 192);
-        }
-        .info tr:nth-child(odd) {
-            background-color: rgb(7, 173, 104);
-        }
+<body>
+    <!-- personal deatails -->
+    <h1 id="name">Karna Kumar Chaudhary</h1>
+    <img src="./KARN.jpg" alt="Photograph" />
 
-        .edu table {
-            border: 2px solid greenyellow;
-            width: 100%;
-            text-align: right;
-            border-collapse: collapse;
-        }
-        .edu th,
-        .edu td {
-            border: 2px solid greenyellow;
-        }
-        .edu th:nth-child(even),
-        .edu td:nth-child(even) {
-            background-color: rgb(201, 110, 5);
-        }
-        .edu th:nth-child(odd),
-        .edu td:nth-child(odd) {
-            background-color: rgb(5, 125, 141);
-        }
-        table img {
-            height: 150px;
-            width: auto;
-            padding: 0px;
-        }
+    <!-- personal details section -->
+    <div class="info">
+        <!-- Used paragraph tag to show personal info -->
+        <table>
+            <tr>
+                <th>Date of Birth:</th>
+                <td>20<sup>th</sup> Feb 2000</td>
+            </tr>
+            <tr>
+                <th>Birth Place:</th>
+                <td>Muzaffarpur Bihar</td>
+            </tr>
+            <tr>
+                <th>Father's Name:</th>
+                <td>Ram Babu Chaudhary</td>
+            </tr>
+            <tr>
+                <th>Mother's Name:</th>
+                <td>Shobha Devi</td>
+            </tr>
+            <tr>
+                <th>Permanent Address:</th>
+                <td>Simra, Shrikant, Muzaffarpur, Bihar, 843115</td>
+            </tr>
+            <tr>
+                <th>Contact Number:</th>
+                <td>7903334860</td>
+            </tr>
+        </table>
+    </div>
 
-        .edu {
-            border-bottom: 2px solid red;
-            padding: 10px;
-            background-color: rgb(180, 124, 124);
-        }
-        .eca {
-            border-bottom: 2px solid red;
-            padding: 10px;
-            background-color: rgb(40, 187, 150);
-        }
+    <!-- Educational details  section -->
+    <div class="edu">
+        <!-- Clickable float to go to top -->
+        <a class="nav1" href="#name">Click here to go to top!</a>
+        <h1>Educational Details</h1>
 
-        ul li {
-            font-style: italic;
-            font-size: larger;
-            padding: 5px;
-        }
-        a:link {
-            padding: 15px 25px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-        }
-        .nav1 {
-            float: right;
-            display: block;
-            text-decoration: none;
-            border: 2px solid red;
+        <!-- educational details of secondary grade -->
+        <table>
+            <caption>
+                Educational Details
+            </caption>
+            <tr>
+                <td></td>
+                <th>School Name</th>
+                <th>Marks Scored</th>
+                <th>Favorite Subject</th>
+                <th>Marksheet Snapshot</th>
+            </tr>
+            <tr>
+                <th>10<sup>th</sup></th>
+                <td>R.K.S.M. High School Simra</td>
+                <td>422</td>
+                <td>Maths</td>
+                <td><img src="X.jpg" alt="" /></td>
+            </tr>
+            <tr>
+                <th>12<sup>th</sup></th>
+                <td>R.D.S. Collage Muzaffarpur</td>
+                <td>367</td>
+                <td>Chemistry</td>
+                <td><img src="12.jpg" alt="" /></td>
+            </tr>
+        </table>
+    </div>
 
-            padding: 10px;
-        }
-        .nav1:link {
-            color: #3cff00;
-            background-color: rgb(29, 10, 134);
-        }
-        .nav1:hover {
-            color: azure;
-            background-color: #2fad09;
-        }
-        .nav2 {
-            float: right;
-            display: block;
-            text-decoration: none;
-            border: 2px solid greenyellow;
+    <!-- Extra curricular activity section-->
+    <div class="eca">
+        <a class="nav2" href="#name">Click here to go to top!</a>
+        <!-- Clickable float to go to top -->
 
-            padding: 10px;
-        }
-        .nav2:link {
-            color: blue;
-            background-color: rgb(177, 104, 104);
-        }
-        .nav2:hover {
-            color: rgb(64, 231, 231);
-            background-color: #cfcfcf;
-        }
+        <h1 class="ec">Extra Curricular Activities</h1>
+        <!--Hobbies heading-->
+        <ul>
+            <li>Graphics Designing</li>
+            <li>Video Editing</li>
+            <li>Chess</li>
+            <li>Cricket</li>
+        </ul>
+    </div>
 
-        .nav3 {
-            float: right;
-            display: block;
-            text-decoration: none;
-            border: 2px solid blue;
+    <!-- Social profiles -->
+    <div class="social">
+        <a class="nav3" href="#name">Click here to go to top!</a>
+        <!-- Clickable float to go to top -->
+        <h1 class="sc">Social Media Profiles</h1>
 
-            padding: 10px;
-        }
-        .nav3:link {
-            color: #d815ff;
-            background-color: rgb(0, 240, 12);
-        }
-        .nav3:hover {
-            color: rgb(63, 42, 255);
-            background-color: #fa8cb0;
-        }
-
-        .fb {
-            font-weight: bold;
-            border: 2px solid #9e8dfa;
-            color: #a4ff88;
-            background-color: rgb(0, 26, 172);
-        }
-        .fb:hover {
-            color: red;
-            background-color: #fff;
-        }
-
-        .ln {
-            font-weight: bold;
-            border: 2px solid #d815ff;
-            color: #d815ff;
-            background-color: rgb(72, 224, 204);
-        }
-        .ln:hover {
-            color: #63ff33;
-            background-color: rgb(175, 155, 155);
-        }
-    </style>
-    <body>
-        <!-- personal deatails -->
-        <h1 id="name">Karna Kumar Chaudhary</h1>
-        <img src="./KARN.jpg" alt="Photograph" />
-
-        <!-- personal details section -->
-        <div class="info">
-            <!-- Used paragraph tag to show personal info -->
-            <table>
-                <tr>
-                    <th>Date of Birth:</th>
-                    <td>20<sup>th</sup> Feb 2000</td>
-                </tr>
-                <tr>
-                    <th>Birth Place:</th>
-                    <td>Muzaffarpur Bihar</td>
-                </tr>
-                <tr>
-                    <th>Father's Name:</th>
-                    <td>Ram Babu Chaudhary</td>
-                </tr>
-                <tr>
-                    <th>Mother's Name:</th>
-                    <td>Shobha Devi</td>
-                </tr>
-                <tr>
-                    <th>Permanent Address:</th>
-                    <td>Simra, Shrikant, Muzaffarpur, Bihar, 843115</td>
-                </tr>
-                <tr>
-                    <th>Contact Number:</th>
-                    <td>7903334860</td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Educational details  section -->
-        <div class="edu">
-            <!-- Clickable float to go to top -->
-            <a class="nav1" href="#name">Click here to go to top!</a>
-            <h1>Educational Details</h1>
-
-            <!-- educational details of secondary grade -->
-            <table>
-                <caption>
-                    Educational Details
-                </caption>
-                <tr>
-                    <td></td>
-                    <th>School Name</th>
-                    <th>Marks Scored</th>
-                    <th>Favorite Subject</th>
-                    <th>Marksheet Snapshot</th>
-                </tr>
-                <tr>
-                    <th>10<sup>th</sup></th>
-                    <td>R.K.S.M. High School Simra</td>
-                    <td>422</td>
-                    <td>Maths</td>
-                    <td><img src="X.jpg" alt="" /></td>
-                </tr>
-                <tr>
-                    <th>12<sup>th</sup></th>
-                    <td>R.D.S. Collage Muzaffarpur</td>
-                    <td>367</td>
-                    <td>Chemistry</td>
-                    <td><img src="12.jpg" alt="" /></td>
-                </tr>
-            </table>
-        </div>
-
-        <!-- Extra curricular activity section-->
-        <div class="eca">
-            <a class="nav2" href="#name">Click here to go to top!</a
-            ><!-- Clickable float to go to top -->
-
-            <h1 class="ec">Extra Curricular Activities</h1>
-            <!--Hobbies heading-->
-            <ul>
-                <li>Graphics Designing</li>
-                <li>Video Editing</li>
-                <li>Chess</li>
-                <li>Cricket</li>
-            </ul>
-        </div>
-
-        <!-- Social profiles -->
-        <div class="social">
-            <a class="nav3" href="#name">Click here to go to top!</a
-            ><!-- Clickable float to go to top -->
-            <h1 class="sc">Social Media Profiles</h1>
-
-            <a
-                class="fb"
-                href="https://www.facebook.com/kumarkarna2"
-                target="_blank"
-                >Facebook</a
+        <a class="fb" href="https://www.facebook.com/kumarkarna2" target="_blank">Facebook</a
             >
 
             <a
@@ -273,6 +290,7 @@
                 target="_blank"
                 >Linkedin
             </a>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>

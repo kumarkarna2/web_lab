@@ -1,139 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>201172</title>
+        <style>
+            .master {
+                border: 5px solid gray;
+                width: 700px;
+                height: auto;
+                margin-right: auto;
+                margin-left: auto;
+            }
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>201172</title>
-    <style>
-        .master {
-            border: 5px solid gray;
-            width: 700px;
-            height: auto;
-            margin-right: auto;
-            margin-left: auto;
-        }
+            .container {
+                display: flex;
+            }
 
-        .container {
-            display: flex;
-        }
+            .map {
+                height: 311px;
+            }
 
-        .map {
-            height: 311px;
-        }
+            a:link {
+                text-decoration: none;
+                display: block;
+            }
 
-        a:link {
-            text-decoration: none;
-            display: block;
-        }
+            .nav {
+                background-color: lightgray;
+                z-index: 1;
+                padding: 20px;
+                height: 50%;
+                width: 20%;
+            }
 
-        .nav {
-            background-color: lightgray;
-            z-index: 1;
-            padding: 20px;
-            height: 50%;
-            width: 20%;
-        }
+            .nav a {
+                padding: 5px;
+            }
 
-        .nav a {
-            padding: 5px;
-        }
+            .main {
+                width: 60%;
+            }
 
-        .main {
-            width: 60%;
-        }
+            .main h1 {
+                margin-top: 0px;
+                background-color: lightblue;
+                text-align: center;
+            }
 
-        .main h1 {
-            margin-top: 0px;
-            background-color: lightblue;
-            text-align: center;
-        }
+            .mission {
+                z-index: 1;
+                background-color: lightgray;
+                float: right;
+                width: 30%;
+                padding: 10px;
+            }
 
-        .mission {
-            z-index: 1;
-            background-color: lightgray;
-            float: right;
-            width: 30%;
-            padding: 10px;
-        }
+            .mission h1 {
+                margin-top: 0px;
+            }
 
-        .mission h1 {
-            margin-top: 0px;
-        }
+            .footer {
+                border: 2px solid gray;
+                background-color: gray;
+                margin-bottom: 0px;
 
-        .footer {
-            border: 2px solid gray;
-            background-color: gray;
-            margin-bottom: 0px;
+                text-align: center;
+            }
 
-            text-align: center;
-        }
+            .footer a:link {
+                display: inline;
+                border-right: 1px solid;
+                padding: 3px 5px;
+                padding-top: 0px;
+            }
 
-        .footer a:link {
-            display: inline;
-            border-right: 1px solid;
-            padding: 3px 5px;
-            padding-top: 0px;
-        }
+            .footer a:last-child {
+                border-right: none;
+            }
+        </style>
+    </head>
 
-        .footer a:last-child {
-            border-right: none;
-        }
-    </style>
-</head>
+    <body>
+        <div class="master">
+            <div class="map">
+                <img
+                    src="images/juit.jpg"
+                    usemap="#image-map"
+                    width="700px"
+                    height="311px"
+                />
 
-<body>
-    <div class="master">
-        <div class="map">
-            <img src="images/juit.jpg" usemap="#image-map" width="700px" height="311px" />
-
-            <map name="image-map">
-                <area target="" alt="Dhyan Kaksh" title="Dhyan Kaksh" href="" coords="540,139,514,262,575,273,597,146"
-                    shape="poly" />
-                <area target="" alt="Malviya Bhawan" title="Malviya Bhawan" href="p10/mb.html"
-                    coords="409,104,367,166,368,229,423,243,474,155,461,105" shape="poly" />
-                <area target="" alt="Mess" title="Mess" href="p10/mess.html" coords="229,148,277,93,314,87,260,164"
-                    shape="poly" />
-                <area target="" alt="Shastri Bhawan" title="Shastri Bhawan" href="p10/sb.html"
-                    coords="397,100,389,141,298,255,189,215,257,173,213,150,264,98,269,98,237,87,145,148,149,208,187,216,244,182,314,112,318,84,400,100,236,222"
-                    shape="poly" />
-                <area target="" alt="Civil Department" title="Civil Department" href="" coords="100,214,34"
-                    shape="circle" />
-                <area target="" alt="Academic Block" title="Academic Block" href=""
-                    coords="285,84,291,55,352,36,507,30,493,108" shape="poly" />
-                <area target="" alt="Auditorium" title="Auditorium" href="" coords="504,37,593,76" shape="rect" />
-            </map>
-        </div>
-        <div class="container">
-            <div class="nav">
-                <a href="">Home</a>
-                <a href="">About Us</a>
-                <a href="">Products </a>
-                <a href="">Our Services</a>
-                <a href="">Contact Us</a>
+                <map name="image-map">
+                    <area
+                        target=""
+                        alt="Dhyan Kaksh"
+                        title="Dhyan Kaksh"
+                        href=""
+                        coords="540,139,514,262,575,273,597,146"
+                        shape="poly"
+                    />
+                    <area
+                        target=""
+                        alt="Malviya Bhawan"
+                        title="Malviya Bhawan"
+                        href="p10/mb.html"
+                        coords="409,104,367,166,368,229,423,243,474,155,461,105"
+                        shape="poly"
+                    />
+                    <area
+                        target=""
+                        alt="Mess"
+                        title="Mess"
+                        href="p10/mess.html"
+                        coords="229,148,277,93,314,87,260,164"
+                        shape="poly"
+                    />
+                    <area
+                        target=""
+                        alt="Shastri Bhawan"
+                        title="Shastri Bhawan"
+                        href="p10/sb.html"
+                        coords="397,100,389,141,298,255,189,215,257,173,213,150,264,98,269,98,237,87,145,148,149,208,187,216,244,182,314,112,318,84,400,100,236,222"
+                        shape="poly"
+                    />
+                    <area
+                        target=""
+                        alt="Civil Department"
+                        title="Civil Department"
+                        href=""
+                        coords="100,214,34"
+                        shape="circle"
+                    />
+                    <area
+                        target=""
+                        alt="Academic Block"
+                        title="Academic Block"
+                        href=""
+                        coords="285,84,291,55,352,36,507,30,493,108"
+                        shape="poly"
+                    />
+                    <area
+                        target=""
+                        alt="Auditorium"
+                        title="Auditorium"
+                        href=""
+                        coords="504,37,593,76"
+                        shape="rect"
+                    />
+                </map>
             </div>
-            <div class="main">
-                <h1>Main Content</h1>
+            <div class="container">
+                <div class="nav">
+                    <a href="">Home</a>
+                    <a href="">About Us</a>
+                    <a href="">Products </a>
+                    <a href="">Our Services</a>
+                    <a href="">Contact Us</a>
+                </div>
+                <div class="main">
+                    <h1>Main Content</h1>
+                </div>
+                <div class="mission">
+                    <h1>Our Mission</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Consequuntur eos cum exercitationem quo non
+                        voluptatem et doloremque sint quas facilis, qui,
+                        nostrum, quisquam facere optio expedita quae cumque
+                        cupiditate suscipit.
+                    </p>
+                    <img src="extra/lemon.jpg" alt="" width="100%" />
+                </div>
             </div>
-            <div class="mission">
-                <h1>Our Mission</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Consequuntur eos cum exercitationem quo non
-                    voluptatem et doloremque sint quas facilis, qui,
-                    nostrum, quisquam facere optio expedita quae cumque
-                    cupiditate suscipit.
-                </p>
-                <img src="extra/lemon.jpg" alt="" width="100%" />
+            <div class="footer">
+                <a href="#">Terms</a>
+                <a href="">Security</a>
+                <a href="">Privacy</a>
             </div>
         </div>
-        <div class="footer">
-            <a href="#">Terms</a>
-            <a href="">Security</a>
-            <a href="">Privacy</a>
-        </div>
-    </div>
-</body>
-
+    </body>
 </html>

@@ -1,98 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>201172</title>
+        <style>
+            body {
+                margin-left: 10px;
+            }
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>201172</title>
-    <style>
-        body {
-            margin-left: 10px;
-        }
+            #contact {
+                margin: 10px;
+            }
 
-        #contact {
-            margin: 10px;
-        }
+            .submit {
+                margin-top: 10px;
+                padding: 5px;
+                background-color: #ccffff;
+                width: 75px;
+            }
+        </style>
+    </head>
 
-        .submit {
-            margin-top: 10px;
-            padding: 5px;
-            background-color: #ccffff;
-            width: 75px;
-        }
-    </style>
-</head>
+    <body>
+        <p>*All fields are mandatory!</p>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required /><br />
+            <label for="contact">Contact:</label>
+            <input type="text" name="contact" id="contact" required /><br />
 
-<body>
-    <p>*All fields are mandatory!</p>
-    <form action="#">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required /><br />
-        <label for="contact">Contact:</label>
-        <input type="text" name="contact" id="contact" required /><br />
+            <label for="country">Country Zone:</label>
+            <select name="country" id="country">
+                <option value="Asia">Asia pacific</option>
+                <option value="Europ">Europ</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Africa">Africa</option>
+            </select>
 
-        <label for="country">Country Zone:</label>
-        <select name="country" id="country">
-            <option value="Asia">Asia pacific</option>
-            <option value="Europ">Europ</option>
-            <option value="North America">North America</option>
-            <option value="South America">South America</option>
-            <option value="Africa">Africa</option>
-        </select>
+            <h4>Please choose appropriate participation type!</h4>
+            <input
+                type="radio"
+                id="student"
+                name="type"
+                value="student"
+                required
+            />
+            <label for="student">Student</label><br />
+            <input type="radio" id="faculty" name="type" value="faculty" />
+            <label for="faculty">Faculty Member</label><br />
+            <input
+                type="radio"
+                id="professional"
+                name="type"
+                value="professional"
+            />
+            <label for="professional">Professional</label><br />
+            <input
+                type="radio"
+                id="company/firm"
+                name="type"
+                value="company/firm"
+            />
+            <label for="company/firm">Company/Firm</label>
 
-        <h4>Please choose appropriate participation type!</h4>
-        <input type="radio" id="student" name="type" value="student" required />
-        <label for="student">Student</label><br />
-        <input type="radio" id="faculty" name="type" value="faculty" />
-        <label for="faculty">Faculty Member</label><br />
-        <input type="radio" id="professional" name="type" value="professional" />
-        <label for="professional">Professional</label><br />
-        <input type="radio" id="company/firm" name="type" value="company/firm" />
-        <label for="company/firm">Company/Firm</label>
+            <h4>Please choose currency type</h4>
 
-        <h4>Please choose currency type</h4>
+            <input type="radio" name="currency" id="rupees" required />
+            <label for="rupees">Rupees (₹ 1500)</label><br />
+            <input type="radio" name="currency" id="doller" />
+            <label for="doller">Doller ($ 20)</label>
 
-        <input type="radio" name="currency" id="rupees" required />
-        <label for="rupees">Rupees (₹ 1500)</label><br />
-        <input type="radio" name="currency" id="doller" />
-        <label for="doller">Doller ($ 20)</label>
+            <h4>Choose mode of payment</h4>
+            <input type="radio" name="mode" id="cc" required />
+            <label for="cc">Credit Card</label><br />
+            <input type="radio" name="mode" id="dc" />
+            <label for="dc">Debit Card</label><br />
+            <input type="radio" name="mode" id="dd" />
+            <label for="dd">Demand Draft</label><br />
 
-        <h4>Choose mode of payment</h4>
-        <input type="radio" name="mode" id="cc" required />
-        <label for="cc">Credit Card</label><br />
-        <input type="radio" name="mode" id="dc" />
-        <label for="dc">Debit Card</label><br />
-        <input type="radio" name="mode" id="dd" />
-        <label for="dd">Demand Draft</label><br />
+            <label for="hotels">Choose Hotel: </label>
+            <select name="hotels" id="hotels">
+                <option value="h1">Hotel 1</option>
+                <option value="h2">Hotel 2</option>
+                <option value="h3">Hotel 3</option>
+                <option value="h4">Hotel 4</option></select
+            ><br /><br />
 
-        <label for="hotels">Choose Hotel: </label>
-        <select name="hotels" id="hotels">
-            <option value="h1">Hotel 1</option>
-            <option value="h2">Hotel 2</option>
-            <option value="h3">Hotel 3</option>
-            <option value="h4">Hotel 4</option>
-        </select><br /><br />
+            <h3>Choose from following services:</h3>
+            <input type="checkbox" name="1" id="1" />
+            <label for="1">Doctor On call</label><br />
+            <input type="checkbox" name="2" id="2" />
+            <label for="2">Room Service</label><br />
+            <input type="checkbox" name="3" id="3" />
+            <label for="3">Ironing Service</label><br />
+            <input type="checkbox" name="4" id="4  " />
+            <label for="4">Laundry Service</label><br />
+            <input type="checkbox" name="5" id="5" />
+            <label for="5">Ticket Service</label><br />
+            <input type="checkbox" name="6" id="6" />
+            <label for="6">Computer Service</label><br />
+            <input type="checkbox" name="7" id="7" />
+            <label for="7">Luggage storage</label><br />
+            <input type="submit" class="submit" />
+        </form>
 
-        <h3>Choose from following services:</h3>
-        <input type="checkbox" name="1" id="1">
-        <label for="1">Doctor On call</label><br>
-        <input type="checkbox" name="2" id="2">
-        <label for="2">Room Service</label><br>
-        <input type="checkbox" name="3" id="3">
-        <label for="3">Ironing Service</label><br>
-        <input type="checkbox" name="4" id="4  ">
-        <label for="4">Laundry Service</label><br>
-        <input type="checkbox" name="5" id="5">
-        <label for="5">Ticket Service</label><br>
-        <input type="checkbox" name="6" id="6">
-        <label for="6">Computer Service</label><br>
-        <input type="checkbox" name="7" id="7">
-        <label for="7">Luggage storage</label><br>
-        <input type="submit" class="submit">
-    </form>
-
-    <div></div>
-</body>
-
+    </body>
 </html>
